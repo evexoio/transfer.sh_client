@@ -246,7 +246,7 @@ def send_to_transfersh(file):
     download_link = response.content.decode('utf-8')
     print("Link to download file(will be saved till {}):\n{}".format(final_date, download_link))
 
-    copy_to_clipboard(download_link)
+    return download_link
 
 
 def copy_to_clipboard(link):
